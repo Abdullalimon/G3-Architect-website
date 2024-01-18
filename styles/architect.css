@@ -111,29 +111,122 @@ main {
     font-size: 16px;
     font-weight: 400;
 }
-.fax-container{
+
+.freature {
+    display: flex;
+    margin-top: 130px;
+    gap: 140px;
+}
+
+.freature-img img {
+    height: 80%;
+    margin-left: 80px;
+
+}
+
+.freature-content .card {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.title {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.freature-content .section-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ten-years {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 300px;
+    height: 160px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 120px;
+   
+}
+
+.ten-years h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+
+}
+.ten-years p{
+font-size: 1.5rem;
+
+}
+
+.fax-container {
     display: flex;
     justify-content: space-around;
 }
 
-.fax-container .card{
+.freature-content .title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.fax-container .card {
+    padding: 30px;
+    margin-bottom: 20px;
     border-radius: 8px;
     border: 1px solid #FF900E;
     text-align: center;
     padding: 40px;
 }
-.fax-container .card-title{
+
+.fax-container .card-title {
     font-weight: 600;
     font-size: 1.25rem;
     color: #727272;
     margin-top: 2px;
 }
-.fax-container .card-stats{
+
+.fax-container .card-stats {
     font-weight: 600;
     font-size: 2.5rem;
     color: #424242;
     margin-top: 10px;
     margin-bottom: 2px;
+}
+
+.Sponspors {
+    text-align: center;
+}
+
+.Sponspors .brand-para {
+    margin-top: 20px;
+}
+
+.sopnspors-img {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 35px;
+}
+
+.foot {
+    width: 1140px;
+    height: 50px;
+    border-radius: 8px;
+    background: #FFF4E7;
+    margin-top: 130px;
+    margin-left: 150px;
+    padding: 10px;
+}
+
+.foot .brand-para {
+
+    text-align: center;
 }
 
 
@@ -145,7 +238,10 @@ main {
     }
 
     nav,
-    .teams {
+    .teams,
+    .fax-container,
+    .freature,
+    .sopnspors-img {
         flex-direction: column;
     }
 
@@ -158,12 +254,32 @@ main {
         padding-right: 20px;
     }
 
+    .fax-container {
+        gap: 20px;
+    }
+    .freature-img img{
+        width: 90%;
+        margin: 0;
+    }
+    .ten-years{
+        position: static;
+        max-width: 300px;
+    }
+    .foot{
+        max-width: 350px;
+        margin-top: 20px;
+        margin-left: 55px;
+    }
+
 }
 
+/* meadium divice and tablet */
 @media screen and (min-width:576px) and (max-width:960px) {
 
     nav,
-    .teams {
+    .teams,
+    .freature,
+    .sopnspors-img {
         flex-direction: column;
     }
 
